@@ -1,0 +1,33 @@
+/** List of possible breakpoints small to large **/
+// These breakpoints can be called using the 'breakpoint' mixin located in _mixins.scss.
+// Example Syntax: @include breakpoint('medium') { ... };
+
+$breakpoints: (
+  'xsmall': (min-width: 577px),
+  'small': (min-width: 767px),
+  'medium': (min-width: 992px),
+  'large': (min-width: 1200px),
+  'ultra': (min-width: 1440px),
+  'xsmall--max': (max-width: 576px),
+  'small--max': (max-width: 766px),
+  'medium--max': (max-width: 991px),
+  'large--max': (max-width: 1199px),
+  'ultra--max': (max-width: 1439px),
+) !default;
+
+@mixin breakpoint($breakpoint) {
+
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+
+      // Prints a media query based on the value
+      @media #{inspect(map-get($breakpoints, $breakpoint))} {
+          @content;
+      }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "(+"Available breakpoints are: #{map-keys($breakpoints)}.");
+  }
+}

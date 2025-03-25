@@ -1,0 +1,10 @@
+:root {
+  --nav-min-height: var(--space-l-xl);
+  --logo-width: 140px;
+  --logo-height: auto;
+  --gap-between-rows: var(--space-s);
+
+  @include breakpoint(medium) {
+    --gap-between-rows: var(--space-l);
+  }
+}

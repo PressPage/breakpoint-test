@@ -1,0 +1,9 @@
+ :root{
+ --table-cell-padding: var(--space-xs-s); // Padding for table cells
+ --table-cell-background-primary: var(--theme-color-lightest); // Background color for table rows
+ --table-cell-background-secondary: var(--theme-color-lighter); // Background color for table rows
+ --table-border: 1px solid var(--theme-color-light); // Border color for table rows
+ --table-cell-border: 1px solid var(--theme-color-lighter); // Border color for table cells
+ --table-width: auto; // Width of the table
+ }
+ 

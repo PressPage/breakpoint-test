@@ -1,0 +1,65 @@
+:root {
+  --heading-font-family: 'Montserrat', sans-serif;
+  --heading-font-style: normal;
+  --heading-font-weight: bold;
+
+  --subheading-font-family: 'Open Sans', sans-serif;
+  --subheading-font-size: var(--h5-font-size);
+  --subheading-font-style: normal;
+  --subheading-font-weight: bold;
+
+  --body-font-family: 'Open Sans', sans-serif;
+  --body-font-style: normal;
+  --body-font-weight: normal;
+
+  --link-font-family: 'Open Sans', sans-serif;
+  --link-font-style: normal;
+  --link-font-weight: normal;
+
+  --tag-font-family: 'Open Sans', sans-serif;
+  --tag-font-style: normal;
+  --tag-font-weight: thin;
+
+  --accordion-header-font-weight: bold;
+
+  --button-font-size: var(--body-font-size);
+  --button-font-family: 'Open Sans', sans-serif;
+  --button-font-weight: bold;
+  --button-font-style: normal;
+}
+
+:root {
+  --h1-font-size: 32px;
+  --h2-font-size: 28px;
+  --h3-font-size: 24px;
+  --h4-font-size: 20px;
+  --h5-font-size: 18px;
+  --h6-font-size: 15px;
+  --body-font-size: 15px;
+  --caption-font-size: 14px;
+  --subtext-font-size: 12px;
+
+  @include breakpoint(medium) {
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --h3-font-size: 28px;
+    --h4-font-size: 24px;
+    --h5-font-size: 20px;
+    --h6-font-size: 16px;
+    --body-font-size: 16px;
+    --caption-font-size: 15px;
+    --subtext-font-size: 13px;
+  }
+
+  @include breakpoint(ultra) {
+    --h1-font-size: 48px;
+    --h2-font-size: 40px;
+    --h3-font-size: 32px;
+    --h4-font-size: 28px;
+    --h5-font-size: 22px;
+    --h6-font-size: 18px;
+    --body-font-size: 16px;
+    --caption-font-size: 15px;
+    --subtext-font-size: 14px;
+  }
+}

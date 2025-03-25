@@ -1,0 +1,32 @@
+
+// Please only add variables here, all other changes should be added in /customization
+
+:root {
+    // All spaces in this template are set using the clamp() function.
+    /// The function takes three parameters: a minimum value, a preferred value, and a maximum allowed value.
+    /// More documentation at: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+
+    /// A tool to help configure such variables is:
+    /// https://utopia.fyi/space/calculator?c=320,16,1.2,1440,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
+
+    /* Generic Space values 3xs through 3xl */
+    --space-3xs: clamp(4px, calc(4.5px + 0.11vw), 5px);
+    --space-2xs: clamp(8px, calc(8px + 0.22vw), 10px);
+    --space-xs: clamp(12px, calc(11.5px + 0.33vw), 15px);
+    --space-s: clamp(16px, calc(15px + 0.44vw), 20px);
+    --space-m: clamp(24px, calc(22.5px + 0.66vw), 30px);
+    --space-l: clamp(32px, calc(30px + 0.88vw), 40px);
+    --space-xl: clamp(48px, calc(45px + 1.32vw), 60px);
+    --space-2xl: clamp(64px, calc(60px + 1.76vw), 80px);
+    --space-3xl: clamp(96px, calc(90px + 2.7vw), 120px);
+
+    /* One-up spacing pairs */
+    --space-3xs-2xs: clamp(4px, calc(6.5px + 0.16vw), 10px);
+    --space-2xs-xs: clamp(8px, calc(9.5px + 0.27vw), 15px);
+    --space-xs-s: clamp(12px, calc(13.5px + 0.38vw), 20px);
+    --space-s-m: clamp(16px, calc(21.5px + 0.6vw), 30px);
+    --space-m-l: clamp(24px, calc(29px + 0.82vw), 40px);
+    --space-l-xl: clamp(32px, calc(46.5px + 1.26vw), 60px);
+    --space-xl-2xl: clamp(48px, calc(64px + 1.7vw), 80px);
+    --space-2xl-3xl: clamp(64px, calc(91.5px + 2.64vw), 120px);
+}

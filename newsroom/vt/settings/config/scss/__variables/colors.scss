@@ -1,0 +1,122 @@
+:root {
+    // Theme colors
+    --theme-color-primary: #00274c;
+    --theme-color-secondary: #22a3d6;
+    --theme-color-tertiary: #999;
+
+    --theme-color-light: hsl(0, 0%, 95%);
+    --theme-color-lighter: hsl(0, 0%, 98%);
+    --theme-color-lightest: hsl(0, 0%, 100%);
+    --theme-color-dark: hsl(0, 0%, 20%);
+    --theme-color-darker: hsl(0, 0%, 10%);
+    --theme-color-darkest: hsl(0, 0%, 0%);
+
+    --theme-color-grey: var(--theme-color-light);
+
+    // Body
+    --body-background: var(--theme-color-lightest);
+    --body-color: var(--theme-color-dark);
+
+    // Heading
+    --heading-color: var(--theme-color-darker);
+    --subheading-color: var(--theme-color-dark);
+
+    // Functional colors
+    --theme-color-warning: #F75641;
+    --theme-color-alert: #F9D626;
+    --theme-color-confirm: #00C995;
+    --theme-color-info: #0097FF;
+
+    // Header
+    --header-background: var(--theme-color-lightest);
+    --header-color: var(--body-color);
+    --header-color__hover: var(--theme-color-darker);
+    --header-submenu-border-color: var(--theme-color-lightest);
+    --header-submenu-background: var(--theme-color-grey);
+    --header-submenu-background__hover: var(--theme-color-lightest);
+    --header-submenu-color: var(--header-color);
+    --header-submenu-color__hover: var(--header-color__hover);
+    --header-separator-color: var(--theme-color-grey);
+
+    // Footer
+    --footer-background: var(--header-background);
+    --footer-color: var(--header-color);
+    --footer-color__hover: var(--header-color__hover);
+
+    // Buttons
+    --button-background-primary: var(--theme-color-primary);
+    --button-color-primary: var(--theme-color-lightest);
+    --button-border-color-primary: var(--button-background-primary);
+
+    --button-background-primary__hover: var(--theme-color-darker);
+    --button-color-primary__hover: var(--button-color-primary);
+    --button-border-color-primary__hover: var(--button-background-primary__hover);
+
+    --button-background-secondary: transparent;
+    --button-color-secondary: var(--theme-color-primary);
+    --button-border-color-secondary: var(--theme-color-primary);
+
+    --button-background-secondary__hover: var(--theme-color-primary);
+    --button-color-secondary__hover: var(--theme-color-lightest);
+    --button-border-color-secondary__hover: var(--button-background-secondary__hover);
+
+    // Icons
+    --icon-background-primary: var(--button-background-primary);
+    --icon-color-primary: var(--button-color-primary);
+    --icon-border-color-primary: var(--button-background-primary);
+
+    --icon-background-primary__hover: var(--button-background-primary__hover);
+    --icon-color-primary__hover: var(--button-color-primary__hover);
+    --icon-border-color-primary__hover: var(--button-background-primary__hover);
+
+    --icon-background-secondary: var(--theme-color-lightest);
+    --icon-color-secondary: var(--theme-color-dark);
+    --icon-border-color-secondary: var(--theme-color-light);
+
+    --icon-background-secondary__hover: var(--theme-color-light);
+    --icon-color-secondary__hover: var(--theme-color-primary);
+    --icon-border-color-secondary__hover: var(--theme-color-light);
+
+    --icon-background-hollow: transparent;
+    --icon-color-hollow: var(--theme-color-dark);
+    --icon-border-color-hollow: transparent;
+
+    --icon-background-hollow__hover: transparent;
+    --icon-color-hollow__hover: var(--theme-color-primary);
+    --icon-border-color-hollow__hover: transparent;
+
+    --icon-background-rss: var(--theme-color-dark);
+    --icon-color-rss: var(--theme-color-lightest);
+    --icon-border-color-rss: var(--theme-color-dark);
+
+    --icon-background-rss__hover: var(--theme-color-darker);
+    --icon-color-rss__hover: var(--theme-color-lightest);
+    --icon-border-color-rss__hover: var(--theme-color-darker);
+
+    // Tags
+    --tag-background: var(--theme-color-light);
+    --tag-color: var(--theme-color-dark);
+    --tag-border-color: var(--theme-color-light);
+
+    --tag-background__hover: var(--theme-color-light);
+    --tag-color__hover: var(--theme-color-darker);
+    --tag-border-color__hover: var(--theme-color-light);
+
+    // Links
+    --link-color: var(--theme-color-secondary);
+    --link-color__hover: var(--theme-color-secondary);
+
+    // Generic Overlays
+    --overlay-alpha: .5;
+    --overlay-background-light: hsla(0, 0%, 95%, var(--overlay-alpha));
+    --overlay-background-dark: hsla(0, 0%, 20%, var(--overlay-alpha));
+
+    // Module Specific Overlays
+    --overlay-banner: var(--overlay-background-dark);
+    --overlay-carousel: var(--overlay-background-dark);
+    --overlay-gallery: var(--overlay-background-dark);
+
+    // Scrollbar
+    --theme-color-scrollbar: var(--theme-color-grey);
+    --theme-color-scroll-thumb: var(--theme-color-secondary);
+}

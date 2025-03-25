@@ -1,0 +1,57 @@
+// Please only add variables here, all other changes should be added in /customization
+
+$grid-cols: (
+    'template-mobile-grid-columns': repeat(12, 1fr),
+    'template-mobile-column-gap': '0',
+    'template-mobile-main-col': '1 / -1',
+    'template-mobile-sidecolumn-col': '1 / -1',
+    'template-desktop-grid-columns': repeat(12, 1fr),
+    'template-desktop-column-gap': var(--space-xl),
+    'template-desktop-main-col': 'span 8 / span 8',
+    'template-desktop-sidecolumn-col': 'span 4 / span 4',
+);
+
+@mixin layout($sidecol-mode: 'sidecolHidden', $grid-cols) {
+    #maintable {
+        grid-template-columns: unquote(map.get($grid-cols, 'template-mobile-grid-columns'));
+        column-gap: unquote(map.get($grid-cols, 'template-mobile-column-gap'));
+        max-width: var(--template-width);
+
+        .pp-main-column {
+            grid-column: unquote(map.get($grid-cols, 'template-mobile-main-col'));
+        }
+
+        .pp-side-column {
+            grid-column: unquote(map.get($grid-cols, 'template-mobile-sidecolumn-col'));
+        }
+
+        @if $sidecol-mode == 'sidecolEnabled' {
+            @include breakpoint('large') {
+                grid-template-columns: unquote(map.get($grid-cols, 'template-desktop-grid-columns'));
+                column-gap: unquote(map.get($grid-cols, 'template-desktop-column-gap'));
+
+                .pp-main-column {
+                    grid-column: unquote(map.get($grid-cols, 'template-desktop-main-col'));
+                }
+
+                .pp-side-column {
+                    grid-column: unquote(map.get($grid-cols, 'template-desktop-sidecolumn-col'));
+                }
+            }
+        } @else if $sidecol-mode == 'sidecolBottom' {
+        } @else if $sidecol-mode == 'sidecolHidden' {
+            .pp-side-column {
+                display: none;
+            }
+        } @else {
+            @error "Unknown sidecol-mode in layout mixin. Possible values are: sidecolEnabled, sidecolBottom or sidecolHidden.";
+        }
+    }
+}
+
+html {
+    --template-width: 1440px;
+    //Usable options: sidecolBottom, sidecolHidden, sidecolEnabled
+
+    @include layout('sidecolHidden', $grid-cols);
+}

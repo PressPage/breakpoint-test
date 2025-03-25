@@ -1,0 +1,54 @@
+// Please only add variables here, all other changes should be added in /customization
+
+:root {
+  /** Miscellaneous Config **/
+  /// This file includes all config elements that could not be sorted into
+  /// Animations, Breakpoints, Colors, Spaces & Type.
+
+  // Border Radii
+  --border-radius-default: .25rem; // Default border-radius for page elements like thumbnails, icons, buttons etc..
+  --border-radius-round: 100rem; // Forces the border radius into a circular shape.
+
+  // Icon Sizes
+  --icon-size-s: var(--space-m); // Size for small icons
+  --icon-size-l: var(--space-l); // Size for larger icons (Is more common)
+
+  // Aspect-ratio's
+  // These variables can easily be edited from this config file rather than diving into the core stylesheets.
+  --aspect-ratio-default: 16/9;
+  --aspect-ratio-article-featured-release: 2;
+  --aspect-ratio-audio-module: 1;
+  --aspect-ratio-banner: var(--aspect-ratio-default);
+  --aspect-ratio-button-module-image: var(--aspect-ratio-default);
+  --aspect-ratio-calendar-module: var(--aspect-ratio-default);
+  --aspect-ratio-contact-module: 1;
+  --aspect-ratio-coverage-module: var(--aspect-ratio-default);
+  --aspect-ratio-featured-release: 2;
+  --aspect-ratio-headline-block: var(--aspect-ratio-default);
+  --aspect-ratio-headline-list: var(--aspect-ratio-default);
+  --aspect-ratio-headline-quote: var(--aspect-ratio-default);
+  --aspect-ratio-headline-rss: var(--aspect-ratio-default);
+  --aspect-ratio-headline-scroll: var(--aspect-ratio-default);
+  --aspect-ratio-headline-tile: var(--aspect-ratio-default);
+  --aspect-ratio-image-module: var(--aspect-ratio-default);
+  --aspect-ratio-liveblog-module: var(--aspect-ratio-default);
+  --aspect-ratio-medialib-thumbnails: 3/2;
+  --aspect-ratio-news-carousel: var(--aspect-ratio-default);
+  --aspect-ratio-slider: 1;
+  --aspect-ratio-video-module: var(--aspect-ratio-default);
+  --aspect-ratio-search-thumbnails: var(--aspect-ratio-default);
+
+  // Search page layout and spacing
+  --search-result-layout-cols: 1fr; // value of thumbnail and text content ratio
+  --search-thumbnail-content-spacing: var(--space-s-m);
+
+  @include breakpoint(small) {
+    // Aspect-ratio's
+    --aspect-ratio-article-featured-release: 3.2;
+    --aspect-ratio-featured-release: 2.5;
+    --aspect-ratio-slider: 2.5;
+
+    // Search page layout and spacing
+    --search-result-layout-cols: 2fr 3fr;
+  }
+}
