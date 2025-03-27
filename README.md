@@ -1,72 +1,110 @@
 # Breakpoint team test
 
-### Introduction
+## Introduction
+Thank you for participating in our interview test. We value your expertise and are excited to see how you approach this challenge. Please read the instructions carefully to understand the requirements and expectations.
 
-Thank you for participating in our interview test. We value your opinion and expertise, and we're excited to see how you approach this challenge. Please read these instructions carefully to ensure you understand the requirements and expectations.
+---
 
-### Task
+## Task & Objective
+You will be provided with two images, and your task is to replicate the layout and design of these images as closely as possible by configuring and customizing our **"vanilla template."**
 
-You will be provided with two images, and your task is to replicate the layout and design of these images as closely as possible by configuring and customising our basic template called "vanilla template".
+We are looking for candidates who can:
 
-### Setup
+- Accurately **replicate the provided designs** while adhering to the restrictions.
+- Write **modular, scalable, and maintainable** SCSS and JavaScript.
+- Use **configuration-driven styling** rather than unnecessary overrides.
+- **Demonstrate attention to detail**, including typography, spacing, and responsiveness.
 
-**1- Forking the Project**
-To begin, please fork the project from [https://github.com/PressPage/breakpoint-test](https://github.com/PressPage/breakpoint-test). This will create a copy of the project in your own GitHub account.
+The goal is **to achieve an accurate representation of the screenshots provided** within the limitations outlined below while maintaining clean, modular, and scalable code.
 
-**2- Setting up Your Repository** Push any changes you make to your own forked repository. Please make sure your repository is private and grant us access to it. This will allow us to review your work and provide feedback.
+---
 
-**3- Running the Project**
-To run the servers that serve the pages and assets, follow these steps:
+## Setup
 
-- Run `npm i` to install the required dependencies
-- Run `yarn dev newsroom` to start the development server. Note that this command will not reload the page, but it will rebuild the SCSS and bundle the JS files upon saving. Simply refresh the page to see the changes.
-- Once the servers are running you can visit [http://localhost:3000](http://localhost:3000) and [http://localhost:3000/article.html](http://localhost:3000/article.html) to have a preview of your result
-- You can find the screenshots of the expected result in the root folder of the project as **test-article-result.png** and **test-homepage-result.png**
+### 1. Forking the Project
 
-### Important Considerations
+Fork the project from [GitHub Repository](https://github.com/PressPage/breakpoint-test). This will create a copy of the project in your GitHub account.
 
-When working on this task, please keep the following factors in mind:
+### 2. Setting up Your Repository
 
-- Only SCSS and JS changes are allowed
-- JS manipulation is only allowed in the article page
-- HTML files should **not** be modified
-- Using jQuery is **not** allowed
-- Ensure the design is responsive
-- Focus on editing the configuration files as much as possible (located in newsroom/vt/settings/config/scss) and add customizations in the custom folder (newsroom/vt/settings/custom).
-  Example: configuring buttons in the theming/buttons folder within the config/scss directory.
+Push any changes to your **forked repository**.
+Make sure your repository is **private** and grant us access for review.
 
-### Design guidelines
+### 3. Running the Project
 
-- Text color overall: #222
-- The pastel light blue color code: #ECF2FF
-- Slider image aspect ratio: 2.4
-- Cards border radius: 24px
-- Buttons:
+Install dependencies:
+  ```sh
+  npm i
+  ```
 
-  // filled
+Start the development server:
+  ```sh
+  yarn dev newsroom
+  ```
 
-  - background color: #222
-  - border: 2px solid #222
-  - color: #fff
+> The server does not auto-refresh. Refresh manually to see updates.
 
-  // hollow
+Preview your implementation at:
+  - `http://localhost:3000` (Homepage)
+  - `http://localhost:3000/article.html` (Article page)
 
-  - background color: #fff
-  - border: 2px solid #222
-  - color: #222
+### 4. Reference Screenshots
 
-  // on hover (both)
+Expected results are provided in the root folder:
 
-  - background color: #444
-  - border: 2px solid #444
-  - color: #fff
+  - `test-homepage-result.png`
+  - `test-article-result.png`
 
-  border-radius: 50px
+---
 
-### Objectives
+## Important Considerations (Scope & Restrictions)
 
-We're looking for a candidate with an eye for detail who can cleverly match the provided designs while demonstrating a deep understanding of best practices in coding, with a focus on writing modular and scalable code that can be easily reused in future projects.
+### ✔ Allowed Changes:
+- **SCSS** modifications (for theming and layout adjustments).
+- **JS manipulations** (but only for the **article page**).
+- **Config file adjustments** (preferably modify existing settings rather than creating new styles from scratch).
+- **Customizations should be added in the** `newsroom/vt/settings/custom` **folder**.
+- **Use predefined configuration options** whenever possible, e.g., adjusting buttons via `theming/buttons` in `config/scss`.
 
-### **Submission**
+### ❌ Not Allowed:
+- **Modifying HTML files** (structure must remain unchanged).
+- **Hardcoding inline styles**—stick to SCSS and configuration-driven styles.
+- **Adding external libraries**—only built-in dependencies should be used.
 
-Once you have completed the task, please ensure that your changes are pushed to your private repository, and we will review your work. We're looking forward to seeing your implementation and feedback.
+### ✔ Required:
+- The design **must be responsive** across different screen sizes.
+- Code must be **clean, reusable, and modular** to ensure maintainability.
+- Maintain consistency with existing **naming conventions and architecture**.
+- For this assessment only vanilla JavaScript is permitted.
+
+---
+
+## Design Guidelines
+
+> Below are a few guidelines that cannot be gotten from a screenshot, so we've provided them for you. For this assessment, we've omitted the need to change any fonts, you can keep these as they are.
+
+- **Text color:** `#222`
+- **Background color (pastel light blue):** `#ECF2FF`
+- **Slider image aspect ratio:** `2.4`
+- **Card border radius:** `24px`
+
+### Buttons
+
+| Type             | Background | Text Color | Border           | Border-radius |
+| :--------------- | :--------- | :--------- | :--------------- | :------------ |
+| **Filled**       | `#222`     | `#fff`     | `2px solid #222` | 50px          |
+| **Hollow**       | `#fff`     | `#222`     | `2px solid #222` | 50px          |
+| **Hover (Both)** | `#444`     | `#fff`     | `2px solid #444` | 50px          |
+
+
+---
+
+## Submission
+
+Once you have completed the task:
+
+1. Ensure all changes are pushed to your **private repository**.
+2. Grant us access so we can review your implementation.
+
+We look forward to seeing your work! 🚀
+
