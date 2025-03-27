@@ -15,7 +15,7 @@ We are looking for candidates who can:
 - Use **configuration-driven styling** rather than unnecessary overrides.
 - **Demonstrate attention to detail**, including typography, spacing, and responsiveness.
 
-The goal is **to achieve an accurate representation of the screenshots provided** within the limitations outlined below while maintaining clean, modular, and scalable code.
+The goal is **to achieve an accurate representation of the screenshots provided** within the limitations outlined in: **"Important Considerations (Scope & Restrictions)"**, while maintaining clean, modular, and scalable code.
 
 ---
 
@@ -69,7 +69,7 @@ Expected results are provided in the root folder:
 ### ❌ Not Allowed:
 - **Modifying HTML files** (structure must remain unchanged).
 - **Hardcoding inline styles**—stick to SCSS and configuration-driven styles.
-- **Adding external libraries**—only built-in dependencies should be used.
+- **Adding external libraries**—only built-in dependencies should be used (only use vanilla Javascript & SCSS).
 
 ### ✔ Required:
 - The design **must be responsive** across different screen sizes.
