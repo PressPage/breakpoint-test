@@ -21,14 +21,18 @@ The goal is **to achieve an accurate representation of the screenshots provided*
 
 ## Setup
 
-### 1. Forking the Project
+### 1. Download the Project
 
-Fork the project from [GitHub Repository](https://github.com/PressPage/breakpoint-test). This will create a copy of the project in your GitHub account.
+Download the project at this [link](https://github.com/PressPage/breakpoint-test/archive/refs/heads/master.zip)
+
+In case you need it this is the link to the repo [GitHub Repository](https://github.com/PressPage/breakpoint-test). 
+. It's important that you create your own repo and work on it.
 
 ### 2. Setting up Your Repository
 
-Push any changes to your **forked repository**.
-Make sure your repository is **private** and grant us access for review.
+Create a new repository in your personal GitHub account. Make sure your repository is **private** and grant us access for review. Please do not fork it or clone it!
+Push an initial commit to your new repository, with the content of the downloaded files then make the necessary changes and commit them separately. You can then create a new pull request from your repository.
+
 
 ### 3. Running the Project
 
